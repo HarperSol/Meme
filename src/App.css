@@ -1,0 +1,127 @@
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 500px; /* Adjust width as needed */
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #db9f71;
+  border-right: 1px solid #ddd;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #db9f71;
+}
+
+.character {
+  position: relative;
+  width: 700px; /* Adjust size as needed */
+  height: 700px; /* Adjust size as needed */
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.control-group {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.control-group h3 {
+  margin-bottom: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item img {
+  max-width: 70px; /* Adjust size as needed */
+  max-height: 70px; /* Adjust size as needed */
+  min-width: 70px;  /* Set minimum width */
+  min-height: 70px; /* Set minimum height */
+  margin-bottom: 2px;
+}
+
+/* New styles for horizontal scrolling */
+.control-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.control-group-buttons {
+  display: flex;
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+  position: relative;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-10%);
+  background-color: #2b1c11;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-button.left {
+  left: 0;
+}
+
+.scroll-button.right {
+  right: 0;
+}
+
+button {
+  background-color: #ffffff;
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  margin-right: 10px; /* Add some space between buttons */
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.download-button {
+  color: black;
+}
+
+.randomize-button {
+  color: black;
+}
+
+.header-container {
+  text-align: center;
+  margin-bottom: 750px; /* Adjust as needed */
+  position: absolute;
+  stroke: ;
+}
+
+h1 {
+  font-size: 42px; /* Adjust the size as needed */
+  text-align: center;
+  margin-bottom: 40px; /* Adjust as needed */
+}
+
+
