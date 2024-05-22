@@ -7,7 +7,7 @@ const layers = {
   Face: ['face-1.png'],
   Outfit: ['outfit-0.png', 'outfit-1.png', 'outfit-2.png', 'outfit-3.png', 'outfit-4.png', 'outfit-5.png', 'outfit-6.png', 'outfit-7.png', 'outfit-8.png'],
   Glasses: ['glasses-0.png', 'glasses-1.png', 'glasses-2.png', 'glasses-3.png', 'glasses-4.png', 'glasses-5.png', 'glasses-6.png', 'glasses-7.png', 'glasses-8.png', 'glasses-9.png', 'glasses-10.png'],
-  Hats: ['hat-0.png', 'hat-1.png', 'hat-2.png', 'hat-3.png', 'hat-4.png', 'hat-5.png', 'hat-6.png', 'hat-7.png', 'hat-8.png', 'hat-9.png', 'hat-10.png', 'hat-11.png'],
+  Hats: ['hat-0.png', 'hat-1.png', 'hat-2.png', 'hat-3.png', 'hat-4.png', 'hat-5.png', 'hat-6.png', 'hat-7.png', 'hat-8.png', 'hat-9.png', 'hat-10.png'],
   Accessories: ['accessory-0.png', 'accessory-1.png', 'accessory-2.png', 'accessory-3.png', 'accessory-4.png', 'accessory-5.png', 'accessory-6.png', 'accessory-7.png', 'accessory-8.png'],
   Hands: ['hands-0.png', 'hands-1.png', 'hands-2.png', 'hands-3.png', 'hands-4.png', 'hands-5.png', 'hands-6.png', 'hands-7.png', 'hands-8.png', 'hands-9.png', 'hands-10.png'],
 };

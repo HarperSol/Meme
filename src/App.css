@@ -1,3 +1,5 @@
+/* Existing CSS... */
+
 .App {
   display: flex;
   height: 100vh;
@@ -9,17 +11,21 @@
   overflow-y: auto;
   background-color: #db9f71;
   border-right: 1px solid #ddd;
+  flex-shrink: 0;
 }
 
 .main-content {
   flex-grow: 1;
   display: flex;
+  flex-direction: column; /* Change to column layout */
   justify-content: center;
   align-items: center;
   background-color: #db9f71;
+  position: relative; /* Ensure the character stays in place */
 }
 
 .character {
+  margin-bottom: 250px;
   position: relative;
   width: 700px; /* Adjust size as needed */
   height: 700px; /* Adjust size as needed */
@@ -63,14 +69,14 @@
 
 .control-group-buttons {
   display: flex;
-  overflow-x: hidden; /* Hide the horizontal scrollbar */
+  overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
   position: relative;
 }
 
 .scroll-button {
   position: absolute;
   top: 50%;
-  transform: translateY(-10%);
+  transform: translateY(-50%);
   background-color: #2b1c11;
   color: white;
   border: none;
@@ -113,14 +119,81 @@ button:hover {
 
 .header-container {
   text-align: center;
-  margin-bottom: 750px; /* Adjust as needed */
-  position: absolute;
-  stroke: ;
+  margin-bottom: 40px; /* Adjust as needed */
+  position: relative; /* Change position to relative */
+  width: 100%;
 }
 
 h1 {
   font-size: 42px; /* Adjust the size as needed */
   text-align: center;
+  margin-top: 90px;
   margin-bottom: 40px; /* Adjust as needed */
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 10px;
+    align-items: center; /* Center the content */
+  }
+
+  .character {
+    width: 100%;
+    height: auto;
+    margin-bottom: 500px; /* Adjust margin to prevent overlap with buttons */
+  }
+
+  .layer {
+    width: 100%;
+    height: auto;
+  }
+
+  .control-group-buttons {
+    overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+  }
+
+  .item img {
+    max-width: 50px; /* Adjust size as needed */
+    max-height: 50px; /* Adjust size as needed */
+    min-width: 50px;  /* Set minimum width */
+    min-height: 50px; /* Set minimum height */
+  }
+
+  button {
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
+
+  .header-container {
+    margin-bottom: 20px; /* Adjust as needed */
+    position: static; /* Ensure the header stays in place on mobile */
+    order: -1; /* Move the header to the top */
+  }
+
+  h1 {
+    font-size: 32px; /* Adjust the size as needed */
+  }
+
+  .download-container {
+    bottom: 0; /* Adjust as needed */
+    position: static; /* Ensure the download container stays in place on mobile */
+    transform: translateX(0);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust margin to prevent overlap with character */
+  }
+}
